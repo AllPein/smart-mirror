@@ -24,6 +24,7 @@ model User {
   id            String   @id @default(uuid())
   settings      Settings?
   embeddings    BigInt[] @unique
+  name          String  @default("A")
 }
 
 
