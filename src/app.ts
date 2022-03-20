@@ -10,7 +10,8 @@ import httpStatus from 'http-status';
 const app = express();
 export const prisma = new PrismaClient();
 app.use(cors())
-app.use(bodyParser.json())
+app.use(bodyParser.json({limit: '50mb'}))
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}))
 app.use(helmet());
 
 app.use('/api/v1/', routes)

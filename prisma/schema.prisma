@@ -23,7 +23,7 @@ model Settings {
 model User {
   id            String   @id @default(uuid())
   settings      Settings?
-  embeddings    BigInt[] @unique
+  embeddings    Float[] @unique
   name          String  @default("A")
 }
 

@@ -7,7 +7,7 @@ const findDistance = (data: number[]) => {
   return Math.sqrt(data.reduce((acc: number, el: number) => acc += el * el, 0))
 }
 
-export const findEuclidianDistance = (sourceRepresentation: bigint[], actualData: bigint[]) => {
+export const findEuclidianDistance = (sourceRepresentation: any[], actualData: any[]) => {
   const euclidianDisntances = sourceRepresentation.reduce((acc, el, i) => {
     acc[i] = el - actualData[i]
     return acc

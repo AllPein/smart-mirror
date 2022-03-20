@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "User" ALTER COLUMN "embeddings" SET DATA TYPE DOUBLE PRECISION[];
